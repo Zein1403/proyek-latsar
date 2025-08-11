@@ -17,7 +17,7 @@ if not os.path.exists(filename):
         writer = csv.writer(f)
         writer.writerow(['Nama', 'Jumlah', 'Satuan', 'Tempat', 'Tanggal'])
 
-st.title("📦 Inventory Management App")
+st.title("📦 Pendataan Inventori")
 
 # Sidebar menu
 menu = st.sidebar.radio("Menu", ["Tambah Item", "Kurangi Item", "Pindahkan Item", "Lihat CSV"])
