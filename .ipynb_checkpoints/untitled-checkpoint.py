@@ -3,6 +3,7 @@ import streamlit as st
 import csv
 import os
 from datetime import datetime
+
 st.set_page_config(
     page_title="Inventory Dashboard",
     page_icon="Logo_BMKG_(2010).png",  # Path to your image file
@@ -41,8 +42,8 @@ def save_data(rows):
         writer.writerows(rows)
 
 # ---- ADD ITEM ----
-if menu == "Tambah Item":
-    st.header("Tambah / Update Item")
+if menu == "Tambah barang":
+    st.header("Tambah / Update barang")
     nama = st.text_input("Nama")
     jumlah = st.number_input("Jumlah", min_value=1, value=1)
     satuan = st.selectbox("Satuan", satuan_options)
