@@ -22,6 +22,28 @@ if not os.path.exists(filename):
         writer = csv.writer(f)
         writer.writerow(['Nama', 'Jumlah', 'Satuan', 'Tempat', 'Tanggal'])
 
+st.markdown(
+    """
+    <style>
+    /* Change page background */
+    .stApp {
+        background-color: #f0f4f8; /* light blue-gray */
+    }
+
+    /* Change text color */
+    body, .stMarkdown, .css-1d391kg {
+        color: #1a1a1a;
+    }
+
+    /* Change header color */
+    h1, h2, h3 {
+        color: #003366; /* dark blue */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 st.title("📦 Pendataan Inventori")
 
 # Sidebar menu
