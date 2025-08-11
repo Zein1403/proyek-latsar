@@ -17,7 +17,7 @@ if not os.path.exists(filename):
         writer = csv.writer(f)
         writer.writerow(['Nama', 'Jumlah', 'Satuan', 'Tempat', 'Tanggal'])
 
-st.title("📦 Manajemen Inventori")
+st.title("📦 Inventory Management App")
 
 # Sidebar menu
 menu = st.sidebar.radio("Menu", ["Tambah Item", "Kurangi Item", "Pindahkan Item", "Lihat CSV"])
@@ -36,14 +36,14 @@ def save_data(rows):
         writer.writerows(rows)
 
 # ---- ADD ITEM ----
-if menu == "Tambah Barang":
-    st.header("Tambah Barang ")
+if menu == "Tambah Item":
+    st.header("Tambah / Update Item")
     nama = st.text_input("Nama")
     jumlah = st.number_input("Jumlah", min_value=1, value=1)
     satuan = st.selectbox("Satuan", satuan_options)
     tempat = st.selectbox("Tempat", tempat_options)
 
-    if st.button("Tambahkan"):
+    if st.button("Submit"):
         rows = load_data()
         found = False
 
@@ -69,8 +69,8 @@ if menu == "Tambah Barang":
         st.success(f"✅ Data '{nama}' berhasil ditambahkan / diperbarui.")
 
 # ---- DECREASE ITEM ----
-elif menu == "Kurangi Barang":
-    st.header("Kurangi Kurangi")
+elif menu == "Kurangi Item":
+    st.header("Kurangi Item")
     nama = st.text_input("Nama")
     jumlah = st.number_input("Jumlah yang dikurangi", min_value=1, value=1)
     satuan = st.selectbox("Satuan", satuan_options)
