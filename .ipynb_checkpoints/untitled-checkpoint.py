@@ -27,7 +27,7 @@ st.markdown(
     <style>
     /* Change page background */
     .stApp {
-        background-color: #f93CAED; /* light blue-gray */
+        background-color: #93CAED; /* light blue-gray */
     }
 
     /* Change text color */
