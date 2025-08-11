@@ -37,6 +37,7 @@ st.markdown(
      
     <hr style="border: 9px solid black;">
     
+    <h2 style="font-weight: 90;">This is bold text</h2>
     /* Change header color */
     h1, h2, h3 {
         color: #003366; /* dark blue */
