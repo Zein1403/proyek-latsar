@@ -35,7 +35,7 @@ st.markdown(
         color: #1a1a1a;
     }
      
-    <hr style="border: 3px solid black;">
+    <hr style="border: 9px solid black;">
     
     /* Change header color */
     h1, h2, h3 {
