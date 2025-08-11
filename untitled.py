@@ -42,8 +42,8 @@ def save_data(rows):
         writer.writerows(rows)
 
 # ---- ADD ITEM ----
-if menu == "Tambah barang":
-    st.header("Tambah / Update barang")
+if menu == "Tambah Item":
+    st.header("Tambah / Update Item")
     nama = st.text_input("Nama")
     jumlah = st.number_input("Jumlah", min_value=1, value=1)
     satuan = st.selectbox("Satuan", satuan_options)
