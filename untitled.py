@@ -3,7 +3,6 @@ import streamlit as st
 import csv
 import os
 from datetime import datetime
-
 st.set_page_config(
     page_title="Inventory Dashboard",
     page_icon="Logo_BMKG_(2010).png",  # Path to your image file
