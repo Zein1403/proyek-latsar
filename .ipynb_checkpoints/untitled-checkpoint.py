@@ -43,20 +43,7 @@ st.markdown(
         color: #003366; /* dark blue */
     }
 
-    /* Make input fields transparent */
-    .stTextInput > div > div > input,
-    .stSelectbox > div > div,
-    .stNumberInput > div > input {
-    background-color: #93CAED; /* White with 20% opacity */
-    color: white; /* Text color */
-    border: 1px solid white; /* Optional: border color */
-    border-radius: 8px; /* Optional: rounded corners */
-    }
-
-    /* Placeholder text color */
-    .stTextInput > div > div > input::placeholder {
-    color: rgba(255,255,255,0.7);
-    }
+    
     </style>
     """,
     unsafe_allow_html=True
